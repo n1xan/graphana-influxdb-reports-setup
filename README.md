@@ -1,6 +1,6 @@
 # graphana-influxdb-reports-setup
 # Pull and start the influxDB docker image
-`docker pull influxdb:v1.8`
+`docker pull influxdb:1.8`
 # Download influx config 
 Download from [https://openplant.b-cdn.net/wp-content/uploads/influxdb.conf](https://openplant.b-cdn.net/wp-content/uploads/influxdb.conf) and save at location: `C:\ProgramData\InfluxDB`
 
@@ -8,6 +8,7 @@ Download from [https://openplant.b-cdn.net/wp-content/uploads/influxdb.conf](htt
 docker exec -it influxdb bash`
 
 # Create the webpagetest database
+`influx`
 `CREATE DATABASE webpagetest`
 
 # Access influxdb instance by visiting [http://localhost:8086/](http://localhost:8086/)
@@ -17,9 +18,11 @@ docker exec -it influxdb bash`
 
 # Add InfluxDB Datasource
 * Access graphana by visiting [http://localhost:3000/](http://localhost:3000/)
+* Login using admin/admin
+* Set new password
 * Open Settings/Add Datasource InfluxDB
-* Fill in DataSource name, url: http://localhost:8086/, Select type "Browser"
-* Click on Save and Test
+* Fill in DataSource name, url: http://localhost:8086/, for Access Select type "Browser"
+* Click on Save & Test
 
 # WebPageTest integration [https://github.com/n1xan/webpagetest-nodejs-runner](https://github.com/n1xan/webpagetest-nodejs-runner)
 # Google Page Speed integration [https://github.com/n1xan/psi-report](https://github.com/n1xan/psi-report)
