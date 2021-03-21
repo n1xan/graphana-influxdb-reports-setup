@@ -27,16 +27,11 @@ docker exec -it influxdb bash`
 # WebPageTest integration [https://github.com/n1xan/webpagetest-nodejs-runner](https://github.com/n1xan/webpagetest-nodejs-runner)
 # Google Page Speed integration [https://github.com/n1xan/psi-report](https://github.com/n1xan/psi-report)
 # JMeter integration [https://jmeter.apache.org/usermanual/realtime-results.html](https://jmeter.apache.org/usermanual/realtime-results.html)
-
-# InfluxDb 2.x setup:
-`docker pull quay.io/influxdb/influxdb:v2.0.4`
-* With InfluxDB running, visit localhost:8086.
-* Start image with port 8086
-* Click Get Started
-* Set up your initial user
-* Enter a Username for your initial user.
-* Enter a Password and Confirm Password for your user.
-* Enter your initial Organization Name.
-* Enter your initial Bucket Name.
-* Click Continue.
-* https://docs.influxdata.com/influxdb/v2.0/get-started/#set-up-influxdb
+# Telegraf Server monitoring
+* Download `https://dl.influxdata.com/telegraf/releases/telegraf-1.16.2_windows_amd64.zip`
+* Unzip
+* Edit telegraf.config
+* Set database name /should be created/
+* Save
+* cmd `telegraf.exe --config telegraf.conf`
+* debug `telegraf.exe --config telegraf.conf --debug`
