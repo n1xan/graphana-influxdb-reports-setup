@@ -20,7 +20,7 @@ Navigate to [http://localhost:8086/](http://localhost:8086/) - 404 error IS EXPE
 Navigate to [http://localhost:8086/query?pretty=true&q=SELECT%20*%20FROM%20%22webpagetest%22&db=webpagetest](http://localhost:8086/query?pretty=true&q=SELECT%20*%20FROM%20%22webpagetest%22&db=webpagetest) to query the newly created Database
 
 # Pull and run the graphana docker image 
-`docker run -d -p 3000:3000 grafana/grafana`
+`docker run -d -p 3000:3000 --name graphana grafana/grafana`
 
 # Add InfluxDB Datasource
 * Access graphana by visiting [http://localhost:3000/](http://localhost:3000/)
