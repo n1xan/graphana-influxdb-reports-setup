@@ -27,7 +27,8 @@ Navigate to [http://localhost:8086/query?pretty=true&q=SELECT%20*%20FROM%20%22we
 * Login using admin/admin
 * Set new password
 * Open Settings/Add Datasource InfluxDB
-* Fill in DataSource name, url: http://localhost:8086/, for Access Select type "Browser"
+* Fill in DataSource name (WebPageTest), url: http://localhost:8086/, for Access Select type "Browser"
+* Fill in Database name: e.g. webpagetest
 * Click on Save & Test
 
 # WebPageTest integration [https://github.com/n1xan/webpagetest-nodejs-runner](https://github.com/n1xan/webpagetest-nodejs-runner)
