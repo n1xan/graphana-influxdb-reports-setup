@@ -16,6 +16,7 @@ Download from [https://openplant.b-cdn.net/wp-content/uploads/influxdb.conf](htt
 # Access influxdb instance
 
 Navigate to [http://localhost:8086/](http://localhost:8086/) - 404 error IS EXPECTED
+
 Navigate to [http://localhost:8086/query?pretty=true&q=SELECT%20*%20FROM%20%22webpagetest%22&db=webpagetest](http://localhost:8086/query?pretty=true&q=SELECT%20*%20FROM%20%22webpagetest%22&db=webpagetest) to query the newly created Database
 
 # Pull and run the graphana docker image 
