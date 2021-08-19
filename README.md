@@ -4,11 +4,13 @@
 # Download influx config 
 Download from [https://openplant.b-cdn.net/wp-content/uploads/influxdb.conf](https://openplant.b-cdn.net/wp-content/uploads/influxdb.conf) and save at location: `C:\ProgramData\InfluxDB`
 
-`docker run -p 8086:8086 -v C:/ProgramData/InfluxDB:/var/lib/influxdb influxdb -config /var/lib/influxdb/influxdb.conf
-docker exec -it influxdb bash`
+`docker run -p 8086:8086 --name influxdb2 -v C:/ProgramData/InfluxDB:/var/lib/influxdb influxdb:1.8`
+
+`docker exec -it influxdb bash`
 
 # Create the webpagetest database
 `influx`
+
 `CREATE DATABASE webpagetest`
 
 # Access influxdb instance by visiting [http://localhost:8086/](http://localhost:8086/)
