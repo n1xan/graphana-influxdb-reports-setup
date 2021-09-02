@@ -1,4 +1,4 @@
-# Setup scripts for InfluxDB storage in docker and reporting in Grafana
+# Performance & Load Testing Infrastructure Setup
 
 The following file will present instructions for complete Performance Testing infrastucture setup on your local machine. The infrastructure contains the following tools and integrations:
 
