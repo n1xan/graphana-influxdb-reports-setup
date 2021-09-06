@@ -140,7 +140,12 @@ docker run -d -p 3000:3000 --name grafana grafana/grafana
 
 ## Run JMeter test with InfluxDB integration
 1. Follow the tutorial: [User manual link](https://jmeter.apache.org/usermanual/realtime-results.html#influxdb_db_configuration)
-
+2. Load sample test
+    ```git
+    git clone https://github.com/n1xan/jmeter-influx-integration.git
+    cd jmeter-influx-integration
+    jmeter -t DemoBellatrixNavigation.jmx
+    ```
 
 ## Configure JMeter test Grafana visualization
 1. Follow the tutorial: [User manual link](https://jmeter.apache.org/usermanual/realtime-results.html#grafana_configuration)
