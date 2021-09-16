@@ -61,7 +61,7 @@ Reporting and monitoring:
 docker run -d -p 3000:3000 --name grafana grafana/grafana
 ```
 
-1. Add InfluxDB Datasource
+2. Add InfluxDB Datasource
 * 🌐Access Grafana by visiting [http://localhost:3000/](http://localhost:3000/)
 * Login using admin/admin
 * Set new password
