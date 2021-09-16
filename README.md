@@ -62,7 +62,7 @@ docker run -d -p 3000:3000 --name grafana grafana/grafana
 ```
 
 1. Add InfluxDB Datasource
-* 🌐Access graphana by visiting [http://localhost:3000/](http://localhost:3000/)
+* 🌐Access Grafana by visiting [http://localhost:3000/](http://localhost:3000/)
 * Login using admin/admin
 * Set new password
 * Open Settings/Add Datasource InfluxDB
